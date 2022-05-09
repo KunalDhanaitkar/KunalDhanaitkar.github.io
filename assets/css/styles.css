@@ -626,9 +626,7 @@ small {
     text-align: center;
     margin: 0 auto;
   }
-  #intro.section {
-    background-position-x: 30%;
-  }
+
   .experience-img {
     display: block;
     margin: auto;
@@ -645,5 +643,8 @@ small {
   }
   .card a {
     margin-right: 0px;
+  }
+  .intro.section.container *:not(span) {
+    padding: 10px;
   }
 }
