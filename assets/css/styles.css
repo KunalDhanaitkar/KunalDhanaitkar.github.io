@@ -599,7 +599,12 @@ small {
     line-height: 200%;
     margin: 30px 0 0;
   }
-
+  #intro.section .container *:not(span) {
+    padding: 0;
+  }
+  #intro.section {
+    background-position-x: 30%;
+  }
   .card .card-content .card-title {
     font-size: 20px;
     line-height: 50px;
