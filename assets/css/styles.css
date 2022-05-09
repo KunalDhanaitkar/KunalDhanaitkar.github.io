@@ -644,7 +644,4 @@ small {
   .card a {
     margin-right: 0px;
   }
-  .intro.section.container *:not(span) {
-    padding: 10px;
-  }
 }
