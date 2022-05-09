@@ -600,7 +600,7 @@ small {
     margin: 30px 0 0;
   }
   #intro.section .container *:not(span) {
-    padding: 0;
+    padding: 2px;
   }
   #intro.section {
     background-position-x: 30%;
