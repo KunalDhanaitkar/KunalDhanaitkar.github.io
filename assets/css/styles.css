@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #e27d60;
+  color: #52ab98;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -111,7 +111,7 @@
 }
 
 .contactme:hover{
-  color: #e27d60;
+  color: #c8d8e4;
   background-color: white;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 a {
-  color: #e27d60;
+  color: #52ab98;
 }
 
 /* main blockqoute */
@@ -194,7 +194,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: #e27d60;
+  color: #52ab98;
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -320,7 +320,7 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid #ffab40;
+  border-bottom: 2px solid #52ab98;
 }
 
 .card li a:hover {
@@ -498,11 +498,11 @@ small {
 /* main-text */
 
 .orange-text {
-  color: #FB9039 !important;
+  color: #52ab98 !important;
 }
 
 .orange {
-  background-color: #FB9039 !important;
+  background-color: #52ab98 !important;
 }
 
 @media (min-width: 1200px) {
@@ -536,7 +536,7 @@ small {
     width: 100%;
   }
   nav {
-    background: #FB9039;
+    background: #52ab98;
     height: 64px;
     position: absolute;
   }
