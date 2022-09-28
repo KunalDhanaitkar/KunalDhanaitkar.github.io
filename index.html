@@ -1,21 +1,11 @@
 
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-    
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    
-    <script src="https://kit.fontawesome.com/e382d7d3c7.js" crossorigin="anonymous"></script>
-
-    
-    <title>Kunal Dhanatkar</title>
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Kunal Dhanaitkar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G8HWKW96R"></script>
@@ -26,760 +16,1245 @@
 
         gtag('config', 'G-3G8HWKW96R');
     </script>
+
+
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.46153846;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.3em;
+}
+
+.highlights>li>p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.67rem;
+}
+
+h3 {
+    font-size: 1.27rem;
+}
+
+em {
+    color: #757575;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* main container */
+
+#resume {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* every section wrapper */
+
+.section {
+    margin-bottom: 1rem;
+}
+
+section .location {
+    margin-right: .5em;
+    color: #606d76;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: .5rem;
+}
+
+#profiles .item {
+    padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+#header>div {
+    line-height: 1.5;
+}
+
+#header>div>div {
+    margin-right: 1.2em;
+}
+
+#header h1.name {
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+#header h2.label {
+    color: #202931;
+    font-size: 1.47rem;
+    font-weight: 300;
+}
+
+#header .picture {
+    width: 11em;
+    float: right;
+    border-radius: 4px;
+}
+
+.main-summary {
+    background: #f1f8ff;
+    padding: 1.2em 1em;
+    margin-top: 1rem;
+}
+
+.main-summary p {
+    margin: .15em 0 0;
+}
+
+h2.section-title {
+    display: inline-block;
+    background: #fff;
+    padding: 0 1em 0.3em 0;
+    color: #ff6d1f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.section>header {
+    position: relative;
+}
+
+.fa {
+    margin-right: 0.25em;
+}
+
+.section>header::after {
+    position: absolute;
+    left: 0;
+    top: .7em;
+    height: 1px;
+    background: #ccc;
+    content: "";
+    width: 100%;
+    z-index: -100;
+    display: block;
+}
+
+.section.main-summary>section {
+    margin: 0;
+}
+
+.section>section>header {
+    font-size: 1.38rem;
+    position: relative;
+    margin-top: .7em;
+}
+
+.section>section>header:first-of-type {
+    margin: 0;
+}
+
+.section>section>header .space-left {
+    position: absolute;
+    left: -1.56rem;
+    top: 5px;
+    color: #aaa;
+    line-height: 1;
+    opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+    display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+    font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+    content: "at "
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+    color: #606d76;
+    font-weight: 400;
+}
+
+.section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+ul.keywords,
+ul.courses {
+    margin-top: .5em;
+}
+
+ul.keywords li,
+ul.courses li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap;
+}
+
+ul.keywords li:hover,
+ul.courses li:hover {
+    background: #dfeaf0;
+}
+
+.item {
+    padding: .5em 0;
+}
+
+.gpa {
+    padding-bottom: .5em;
+}
+
+.fa.social {
+    font-size: 1.1em;
+}
+
+
+/* Social Media Brand Colors */
+
+.google-plus {
+    color: #dd4b39;
+}
+
+.tumblr {
+    color: #32506d;
+}
+
+.foursquare {
+    color: #0072b1;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.pinterest {
+    color: #cb2027;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.instagram {
+    color: #517fa4;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.soundcloud {
+    color: #ff3a00;
+}
+
+.wordpress {
+    color: #21759b;
+}
+
+.youtube {
+    color: #bb0000;
+}
+
+.github {
+    color: #171515;
+}
+
+.stack-overflow {
+    color: #828386;
+    position: relative;
+}
+
+.flickr {
+    color: #ff0084;
+}
+
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: '\f16c';
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%;
+}
+
+.telegram {
+    color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+    width: 15em;
+    padding: 0 1.5em 0.5em 0;
+    border-bottom: none;
+}
+
+#skills .item {
+    width: 16em;
+}
+
+#skills .item .keywords {
+    width: 18em;
+}
+
+
+/* Skill chart */
+
+.level {
+    margin-bottom: .5em;
+}
+
+.level .bar {
+    border: 1px solid #ddd;
+    display: block;
+    width: 10em;
+    height: 5px;
+    position: relative;
+}
+
+.level .bar::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background: black;
+    height: 5px;
+}
+
+.level.beginner .bar::after {
+    background: #EB5F51;
+    width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+    background: #ffdf1f;
+    width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+    background: #5CB85C;
+    width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+    background: #59C596;
+    width: 10em;
+}
+
+#references .item {
+    padding-left: .5em;
+    border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  visibility: hidden;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display {
+    display: block;
+    opacity: 1 !important;
+}
+
+.margin1 {
+    margin-bottom: .5rem;
+}
+
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+    #resume {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
+    }
+}
+
+@media print {
+    #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+    }
+    @page {
+        margin: 1cm 1.4cm;
+    }
+    .item-count {
+        display: none;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "at ";
+    }
+    .main-summary {
+        padding: 2rem 0;
+    }
+    .section {
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .section header {
+        padding-bottom: .15rem;
+    }
+    .section .location {
+        padding-bottom: .15rem;
+    }
+    .stack-overflow::after {
+        content: "";
+    }
+    .fa.social {
+        color: #828386;
+    }
+    ul {
+        margin-top: .4em;
+    }
+    ul,
+    li {
+        padding: 0;
+    }
+    ul.keywords li,
+    ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+    }
+    ul.keywords li::after,
+    ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+    }
+    ul.keywords::before,
+    ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    ul.keywords::before {
+        content: "Skills acquired: ";
+    }
+    #skills .keywords::before {
+        content: '';
+    }
+    .section p {
+        margin: 0;
+        padding: 0;
+    }
+    ul.courses::before {
+        content: "Major courses: ";
+    }
+    ul.keywords li:last-of-type::after,
+    ul.courses li:last-of-type::after {
+        content: "";
+    }
+    .level em {
+        font-style: normal;
+        padding: .1em 0;
+    }
+    .level .bar {
+        display: none;
+    }
+    #profiles .item {
+        padding: 0;
+    }
+    .item.display {
+        display: block;
+        opacity: 1 !important;
+    }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<img class="picture" src="assets/img/photo.jpg" alt="Kunal Dhanaitkar" />
+    		<div class="middle">
+    			<h1 class="name">Kunal Dhanaitkar</h1>
+    			<h2 class="label">Computer Science Graduate</h2>
+    		</div>
+    		
+    		<span class="location">
+    			<span class="address">14 Ellsworth Avenue,</span> 
+    			<span class="postalCode">New Haven,</span> 
+    			<span class="city">CT,</span> 
+    			<span class="region">06511</span> 
+    		</span>
+    		
     
-</head>
-
-
-<body>
+    		<div id="contact">
+    			<div class="website">
+    				<span class="fa fa-external-link"></span>
+    				<a target="_blank" target="_blank" href="https://kunaldhanaitkar.github.io">http://kunaldhanaitkar.me</a>
+    			</div>
+    			<div class="email">
+    				<span class="fa fa-envelope-o"></span>
+    				<a href="mailto:kunal.dhanaitkar02@gmail.com">kunal.dhanaitkar02@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fa fa-mobile"></span>
+    				<a href="tel:(203)570-1722">(203) 570-1722</a>
+    			</div>
+    		</div>
     
-    <!-- Navigation Menu-->
-    <nav class="hide-on-small-only">
-        <ul class="side-nav fixed section table-of-contents">
-
-        <li class="logo">
-            <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-            class="brand-logo">
-            <img src="assets/img/Graduation22.jpg" class="circle img-responsive profile-pic" alt="avatar">
-            </a>
-        </li>
-
-        <li class="bold">
-            <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark orange-text"><i
-                class="mdi-social-person small"></i><span>About</span></a>
-        </li>
-        <li class="bold">
-            <a aria-label="Navigate to the Experience section" href="#experience"
-            class="waves-effect waves-dark orange-text"><i
-                class="mdi-action-trending-up small"></i><span>Experience</span></a>
-        </li>
-
-        <li class="bold">
-            <!--
-            ICONS:
-            -->
-            <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i
-                class="mdi-social-school small"></i><span>Education</span></a>
-        </li>
-
-        <li class="bold">
-            <!-- mdi-av-web small
-                mdi-av-my-library-books small-->
-            <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark orange-text"><i
-                class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-        </li>
-
-        <li class="bold">
-            <!--
-            ICONS:
-            mdi-action-assessment
-            mdi-social-poll
-            mdi-av-equalizer
-            -->
-            <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark orange-text"><i
-                class="mdi-action-assessment small"></i><span>Skills</span></a>
-        </li>
-
-        <li class="bold">
-            <!-- 
-            1. mdi-communication-contacts
-            2. mdi-content-mail
-            3. mdi-communication-email
-            -->
-            <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark orange-text"><i
-                class="mdi-content-mail small"></i><span>Contact</span></a>
-        </li>
-        </ul>
-    </nav>
-
-    <!-- Nav class 2 -->
-    <nav class="hide-on-large only trigger z-depth-1">
-        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-        class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        <div class="name-title">
-            <a id="name" aria-label="Navigate to the beginning of the page" href="#"><b>Kunal
-            Dhanaitkar</b></a><span>Software Developer</span>
-        </div>
-    </nav>
-
-    <!-- Nav class 3 -->
-    <nav class="hide-on-large only">
-        <ul id="slide-out" class="side-nav">
-            <li class="bold">
-                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark orange-text"><i
-                    class="mdi-social-person small"></i><span>About</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Experience section" href="#experience"
-                class="waves-effect waves-dark orange-text"><i
-                    class="mdi-action-trending-up small"></i><span>Experience</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i
-                    class="mdi-social-school small"></i><span>Education</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark orange-text"><i
-                    class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark orange-text"><i
-                    class="mdi-action-assessment small"></i><span>Skills</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark orange-text"><i
-                    class="mdi-content-mail small"></i><span>Contact</span></a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Main Content-->
-    <main>
-        <!-- First Section: Heading lines and image -->
-        <section id="intro" class="section scrollspy full-height">
-            <div class="overlay"></div>
-                <div class="container">
-                    <div class="col-md-9">
-                        <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-                            <div class="caption">
-                            <h2>Hi, I'm <span class="orange">Kunal Dhanaitkar.</span></h2>
-                            <h5 style="color:#fff">I am <span class="typing" style="font-weight: 300; color:rgb(255, 255, 255)"></span></h5>
-                            <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-                            <h5></h5>
-                            </div>
-                            <div class="social">
-                            <a href="http://linkedin.com/in/kunaldhanaitkar" target="_blank">
-                                <button class="icon-btn linkedin">
-                                <i class="fa fa-linkedin"></i>
-                                </button>
-                            </a>
-                            <a href="https://github.com/KunalDhanaitkar" target="_blank">
-                                <button class="icon-btn github">
-                                <i class="fa fa-github"></i>
-                                </button>
-                            </a>
-                            </div>
-                            <div class='buttons'>
-                            <a href="#about" class="readme">Read More</a>
-                            <a href="#contact" class="contactme">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- Second Section: About -->
-        <section id="about" class="section scrollspy">
-            <h3 class="page-title white-text orange">About</h3>
-            <div class="container flow-text">
-
-            <p>
-                Detail-oriented, Energetic, and Inquisitive Graduate with a Master of Science in Computer Science. Aiming to leverage 
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/kunaldhanaitkar/">Kunal Dhanaitkar</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-facebook facebook social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.facebook.com/KayDe2797/">Kunal Dhanaitkar</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/KunalDhanaitkar">Kunal Dhanaitkar</a>
+    					</span> 
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section main-summary">
+    		<section>
+    			<div>Detail-oriented, Energetic, and Inquisitive Graduate with a Master of Science in Computer Science. Aiming to leverage 
                     my academic experience and proven knowledge of application development, web platform development, and problem-solving to become 
-                    a successful professional in the field of Information Technology.   
-            </p>
-
-            </div>
+                    a successful professional in the field of Information Technology. </br></p></div>
+    		</section>
+    	</section>
+    
+    <section class="section margin1">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Programming Languages
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Java</li>
+    				<li>Python</li>
+    				<li>C++</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Server
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>ExpressJS</li>
+    				<li>Django</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Databases
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>MySQL</li>
+    				<li>MongoDB</li>
+    				<li>Firebase Firestore</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Tools
+    			</h3>
+    			 
+    			<div class="level master">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Visual Studio Code</li>
+    				<li>Eclipse</li>
+    				<li>Android Studios</li>
+    				<li>PyCharm</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Web Services
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>REST</li>
+    				<li>SOAP</li>
+    			</ul>
+    		</div>
+            <div class="item">
+    			<h3 class="name">
+    				Frameworks
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Spring</li>
+    				<li>Hadoop</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Cloud
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>Intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Amazon Web App services</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				OS
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>Intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Linux</li>
+    				<li>Windows</li>
+                    <li>Android</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Version control
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>Intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Git</li>
+				    <li>JIRA</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience</h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="work-item-0"></label>
+    
+    			<header>
+    				<div class="position">Graduate Teaching Assistant</div>
+    				<div class="company"><span class="website">
+        		<a target="_blank" href="https://www.newhaven.edu/">University of New Haven</a>
+        	</span></div>
+    				<div class="date">
+    				  <span class="startDate">August 2021</span> 
+    					<span class="endDate">- May 2022</span> 
+    				</div>
+    			</header>
+    			
+        	      	<div class="item" id="work-item"> 
+                        
+            <ul class="highlights">
+                <li><p>Mentored primarily Computer Science majoring students to learn intermediate programming concepts in Java</p></li>
+                <li><p>Assisted students with their Assignments and semester-long Project and communicated with faculties on Canvas, Zoom, and Microsoft Teams.</p></li>
+                <li><p>Conducted Polls and Review sessions on the Course, Topics, and Projects.</p></li>
+                <li><p>Environment: VS Code, Eclipse, MS Excel.</p></li>
+            </ul>
+        	</div>
         </section>
-
-        <!-- Third Section: Experience -->
-        <section id="experience" class="section scrollspy">
-            <h3 class="page-title white-text orange">Experience</h3>
-            <div class="container">
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education</h2>
+      </header>
     
-            <!-- Latest Experience -->
-            <div class="card">
-                <div class="card-content">
-                <div class="row">
-                    <div class="experience-img">
-                    <a href="https://www.newhaven.edu/engineering/graduate-programs/computer-science/index.php?msclkid=540c4005ceed11eca63be606c5f985e9" target="_blank"><img alt="UNG logo"
-                        src="https://upload.wikimedia.org/wikipedia/en/5/55/University_of_New_Haven_seal.png" class="responsive-img center-block" /></a>
-                    </div>
-                    <!-- <div class="col s12 m10"> -->
-                    <div class="experience-title"><a href="https://www.newhaven.edu/engineering/graduate-programs/computer-science/index.php?msclkid=540c4005ceed11eca63be606c5f985e9" target="_blank"
-                            class="black-text hoverline">University of New Haven</a></span>         
-                    </div>
-                </div>
-                <div class="role black-text text-darken-2">Graduate Teaching Assistant</div>
-                <ul>
-                    <li>
-                        Mentored primarily Computer Science majoring students to learn intermediate programming concepts in both C and C++.
-                    </li>
-                    <li>
-                        Assisted students with their Assignments and Projects.                     
-                    </li>
-                    <li>
-                        Communicated with faculties and students on Canvas, Blackboard, Zoom, and Microsoft Teams.
-                    </li>
-                    <li>
-                        Conducted Polls and Review sessions on the Course, Topics, or Projects.</li>
-                    <li>
-                    <b>Tools:</b> VS Code, CodeBlocks, MS Excel
-                    </li>
-                </ul>
-                </div>
-                <div class="card-action">
-                <span>August 2021 - May 2022 | Connecticut, USA</span>
-                </div>
+      <section id="education">
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Master of Science - 
+              </div>
+              <div class="area">
+                Compter Science
+              </div>
+              <div class="institution">
+                University of New Haven
+              </div>
             </div>
-
+            <div class="date">
+              <span class="startDate">
+              2020
+              </span>
+              <span class="endDate">
+              - 2022
+              </span>
+            </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>Data Structures and Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Web Database Application Development</li>
+            <li>Android Development</li>
+            <li>Database Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Cloud Computing</li>
+            <li>Data Mining</li>       
+            <li>Computer Security</li>
+            <li>Computer Networks and Data Communication</li>
+            <li>Python</li>
+            <li>Java</li> 
+          </ul>
+    
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span>3.93</span>
+            </div>
+          </div>
         </section>
-
-        <!-- Fourth Section: Education -->
-        <section id="education" class="section scrollspy">
-            <h3 class="page-title white-text orange">Education</h3>
-            <div class="container">
-            <div class="row">
-                <!-- Education -->
-                <div class="col s12 m6 l6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="edu-img">
-                            <a href="https://www.newhaven.edu/engineering/graduate-programs/computer-science/index.php?msclkid=540c4005ceed11eca63be606c5f985e9" target="_blank"><img alt="UNG logo"
-                                src="https://upload.wikimedia.org/wikipedia/en/5/55/University_of_New_Haven_seal.png" class="responsive-img center-block" /></a>
-                            </div>
-                    <p>
-                        <span class="card-title"><a href="https://www.newhaven.edu/engineering/graduate-programs/computer-science/index.php?msclkid=540c4005ceed11eca63be606c5f985e9" target="_blank" class="orange-text hoverline"><b>University of New Haven</b></a></span>
-                    </p>
-                    <p class="brown-text">Connecticut, USA</p>
-                    <p>
-                        </b><b>Master of Science in Computer Science</b>      
-                        <br>
-                        <b>CGPA: </b>3.93/4.0
-                    </p>
-    
-                    <ul>
-                        <p>
-                        <b>Relevant Courseworks:</b>
-                        <ul>
-                            <li>Data Structures and Algorithms</li>
-                            <li>Artificial Intelligence</li>
-                            <li>Web Database Application Development</li>
-                            <li>Android Development</li>
-                            <li>Database Systems</li>
-                            <li>Distributed Database Systems</li>
-                            <li>Cloud Computing</li>
-                            <li>Data Mining</li>       
-                            <li>Computer Security</li>
-                            <li>Computer Networks and Data Communication</li>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>Java</li>            
-                        </ul>
-                        </p>
-    
-                    </ul>
-                    </div>
-                    <div class="card-action" style="text-align: right;">
-                        <span>August 2020 - May 2022</span>
-                    </div>
-                </div>   
-                </div>
-
-                <div class="col s12 m6 l6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="edu-img2">
-                            <a href="https://indoreinstitute.com/" target="_blank"><img alt="RGPV logo"
-                                src="https://upload.wikimedia.org/wikipedia/en/c/c4/Rajiv_Gandhi_Proudyogiki_Vishwavidyalaya_logo.png" class="responsive-img center-block" /></a>
-                            </div>
-                    <p>
-                        <span class="card-title"><a href="https://www.newhaven.edu/engineering/graduate-programs/computer-science/index.php?msclkid=540c4005ceed11eca63be606c5f985e9" target="_blank" class="orange-text hoverline"><b>INDORE INSTITUTE OF SCIENCE AND TECHNOLOGY</b></a></span>
-                    </p>
-                    <p class="brown-text">Madhya Pradesh, India</p>
-                    <p>
-                        </b><b>Bachelor of Engineering in Information Technology</b>
-                        <br>
-                        <b>CGPA: </b>3.0/4.0
-                    </p>
-    
-                    <ul>
-                        <p>
-                        <b>Relevant Courseworks:</b>
-                        <ul>
-                            <li>Data Structures and Algorithms</li>
-                            <li>Discrete Structures</li>
-                            <li>Object Oriented Programming & Methodology</li>
-                            <li>System Engineering</li>
-                            <li>Computer Architecture</li>
-                            <li>Database Management Systems</li>
-                            <li>Operating Systems</li>
-                            <li>Theory of Computation</li>
-                            <li>Computer Networks</li>
-                            <li>Principles of Programming Languages</li>
-                            <li>Internet Technology and Network Management</li>
-                            <li>Software Engineering</li>
-                            <li>Computer Graphics and Multimedia</li>
-                            <li>Compiler Design</li>
-                            <li>Information Security</li>
-                            <li>Soft Computing</li>
-                            <li>Object Oriented Analysis and Design</li>
-                            <li>Cloud Computing</li>
-                            <li>Wireless & Mobile Computing</li>
-                        </ul>
-                        </p>
-    
-                    </ul>
-                    </div>
-                    <div class="card-action" style="text-align: right;">
-                        <span>August 2015 - May 2019</span>
-                    </div>
-                </div>
-                </div>
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Engineering - 
+              </div>
+              <div class="area">
+                Information Technology
+              </div>
+              <div class="institution">
+                RGPV University
+              </div>
             </div>
+            <div class="date">
+              <span class="startDate">
+              2015
+              </span>
+              <span class="endDate">
+              - 2019
+              </span>
             </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>Data Structures and Algorithms</li>
+            <li>Discrete Structures</li>
+            <li>Object Oriented Programming & Methodology</li>
+            <li>System Engineering</li>
+            <li>Computer Architecture</li>
+            <li>Database Management Systems</li>
+            <li>Operating Systems</li>
+            <li>Theory of Computation</li>
+            <li>Computer Networks</li>
+            <li>Principles of Programming Languages</li>
+            <li>Internet Technology and Network Management</li>
+            <li>Software Engineering</li>
+            <li>Computer Graphics and Multimedia</li>
+            <li>Compiler Design</li>
+            <li>Information Security</li>
+            <li>Soft Computing</li>
+            <li>Object Oriented Analysis and Design</li>
+            <li>Cloud Computing</li>
+            <li>Wireless & Mobile Computing</li>
+          </ul>
+    
+          <div class="item">
+            <div class='gpa'>
+              <!--<strong> Grade:</strong> <span>6.79</span>-->
+            </div>
+          </div>
         </section>
-
-        <!-- Fifth Section: Projects -->
-        <section id="projects" class="section scrollspy">
-            
-            <h3 class="page-title white-text orange">Projects</h3>
-            
-            <div class="container">
-                <div class="row">
+      </section>
+    </section>
+	<section class="section">
+      <header>
+        <h2 class='section-title'>Certification</h2>
+      </header>
     
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="CookBook" src="assets/img/cookbook.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>CookBook Android</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                A fully functional kitchen reference android application developed using Kotlin and Android Studio.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> Android Studio, Kotlin, Firebase Firestore, Trello Kanban Board, Git</li>
-            
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/CookBook_Android_App"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                       
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="SystemMonitor" src="assets/img/sysmonitor.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>System Monitor Django</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Monitor Computer Resources such as CPU Utilization, Memory Utilization, Disk Utilization and Network Statistics.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> Python, Django, psutil, Bootstrap, HTML, CSS</li>
-            
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/System-Monitor-Django"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="StudyResources" src="assets/img/studyresources.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>Study Resources Web-App</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                A web application to navigate free study material available on the internet. Developed using Vue and JS.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> Visual Studios, Vue, HTML, JS, CSS, Heroku</li>            
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/vue-frontend"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="Library" src="assets/img/library.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>Library Management System</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Project illustrates a Library Management System, cretaed using python, MySQL, and Tkinter.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> PyCharm, MySQL Workbench, Python, Tkinter, Latex, Lucid Charts</li>
- 
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/thefirstavenger"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="Pygame" src="assets/img/space.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>Space Invaders PyGame</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                The classic Space Invaders game written in Python and using Python module 'Pygame'.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> Pycharm, Python, Pygame</li>
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/PyGame-Space-Invaders"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="Chatbot" src="assets/img/chatbot.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>ChatBot Django, NLP</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                To implement this ChatBot, 
-                                Python Deep Learning Neural Networks and NLTK frameworks were used.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> PyCharm, Python, Pandas, Numpy, Matplotlib, Keras, Tensorflow, NLTK, Scopy, Sklearn</li>
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/AI-Chatbot"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="Faang" src="assets/img/faang.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>FAANG Stock Market Prediction</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Time Series Forecasting and Data Modeling using ARIMA, RNN, and LSTM.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> Jupyter Notebook</li>
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/DataDiggers"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                        <div class="card medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="Crawler" src="assets/img/crawler.png" style="height: 100%; width: 100%" class="activator" />
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator orange-text hoverline"><b>Crawler and Search Engine</b><i
-                                class="mdi-navigation-more-vert right"></i></span>
-                            <p>
-                                Developed a web crawler and a serach engine for the Unversity website.
-                            </p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text"><small></small><i
-                                class="mdi-navigation-close right"></i></span>
-                            <ul>
-                                <li><b>Tools:</b> PyCharm, Jupyter Notebook, BeautifulSoup, Colorama, Flask</li>
-            
-                            </ul>
-                            <div class="card-action">
-                                <a aria-label="Visit the GitHub repo for  project" href="https://github.com/KunalDhanaitkar/Web-Crawler-BeautifulSoup"
-                                target="_blank" data-position="top" data-tooltip="View Source"
-                                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                    class="fa fa-github"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                
-
-                </div>
+      <section id="education">
+	 <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="area">
+                <a href="https://www.credly.com/badges/d6d7614e-bfaf-4c36-ad74-7f8f047abcea" target="_blank">AWS Cloud Practitioner</a>
+              </div>
+              <div class="institution">
+                Amazon
+              </div>
             </div>
-        </section>
-
-        <!-- Sixth Section: Skills -->
-        <section id="skills" class="section scrollspy">
-            <h3 class="page-title white-text orange">Skills</h3>
-            <div class="container">
-
-            <!-- Languages and Databases -->
-            <div class="card">
-                <div class="card-content">
-                <h4 class="brown-text light">Languages and Databases</h4>
-                <div class="row text-center">
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/python-logo-1.png" class="responsive-img" />Python
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/C++.jpg" class="responsive-img" />C++
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/javascript.png" class="responsive-img" />JavaScript
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/Kotlin.png" class="responsive-img" />Kotlin
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/html5.png" class="responsive-img" />HTML5
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/css3.png" class="responsive-img" />CSS3
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/Firebase.png" class="responsive-img" />Firebase Firestore
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/mongo.png" class="responsive-img" />MongoDB
-                    </div>
-                </div>
-                </div>
+          </header>
+        </section></br>
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="area">
+                Become a Java Programmer  
+              </div>
+              <div class="institution">
+                LinkedIn
+              </div>
             </div>
-            
-            <!-- Tools and Technologies --> 
-            <div class="card">
-                <div class="card-content">
-                <h4 class="brown-text light">Tools and Technologies</h4>
-                <div class="row text-center">
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/vscode.jpg" class="responsive-img" />VS Code
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/codeblocks.png" class="responsive-img" />CodeBlocks
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/pycharm.jpg" class="responsive-img" />PyCharm
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/jupyter.png" class="responsive-img" />Jupyter
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/eclipse.png" class="responsive-img" />Eclipse
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/android_studio.png" class="responsive-img" />Android Studio
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/packettracer.png" class="responsive-img" />Cisco Packet Tracer
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/MySQLWorkbench.jpg" class="responsive-img" />MySQL Workbench
-                    </div>
-                </div>
-                </div>
+          </header>
+        </section></br>
+		<section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="area">
+                Become a Spring Developer
+              </div>
+              <div class="institution">
+                LinkedIn
+              </div>
             </div>
-    
-            <!-- Frameworks and Libraries -->
-            <div class="card">
-                <div class="card-content">
-                <h4 class="brown-text light">Frameworks and Libraries</h4>
-                <div class="row text-center">
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/django-logo.webp" class="responsive-img" />Django
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/heroku.png" class="responsive-img" />Heroku
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/flask-logo.png" class="responsive-img" />Flask
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/nodejs.png" class="responsive-img" />NodeJS
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/git.png" class="responsive-img" />Git
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/bootstrap.png" class="responsive-img" />Bootstrap
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/trello.png" class="responsive-img" />Trello Kanban Board
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/hadoop.png" class="responsive-img" />Hadoop
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/vue.png" class="responsive-img" />Vue
-                    </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="assets/img/keras-logo.png" class="responsive-img" />Keras
-                    </div>
-                </div>
-                </div>
+          </header>
+        </section></br>
+		<section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="area">
+                Data Structure and Algorithms 
+              </div>
+              <div class="institution">
+                Udemy
+              </div>
             </div>
-    
-            <!-- certifications -->
-    
-            </div>
+          </header>
         </section>
         
+      </section>
+    </section></br>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Academic Projects</h2>
+      </header>
+      <section id="awards">
+        <section class="award-item">
 
-        <!-- Seventh Section: Contact -->
-        <section id="contact" class="section scrollspy full-height">
-            <h3 class="page-title white-text orange">Contact</h3>
-            <div class="container">
-            <p>
-                <a href="tel: +1 203 570 1722" data-position="top" data-tooltip="Phone"
-                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-                    ></a></a>
-            </p>
-            <p>
-                <a aria-label="Email Kunal" href="mailto:kunaldhanaitkar@gmail.com" target="_blank" data-position="top"
-                data-tooltip="Email" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                    class="fa fa-envelope"></i><a aria-label="Email kunal" href="mailto:kunal.dhanaitkar02@gmail.com"
-                    ></a></a>
-            </p>
-            <p>
-                <a aria-label="View Kunal on GitHub" href="http://github.com/KunalDhanaitkar" target="_blank"
-                data-position="top" data-tooltip="GitHub"
-                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-                    aria-label="kunal on Github" href="http://github.com/KunalDhanaitkar"></a></a>
-            </p>
-            <p>
-                <a aria-label="View Kunal on LinkedIn" href="http://linkedin.com/in/kunaldhanaitkar" target="_blank"
-                data-position="top" data-tooltip="LinkedIn"
-                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                    class="fa fa-linkedin"></i><a aria-label="kunal on LinkedIn" href="http://linkedin.com/in/kunaldhanaitkar"></a></a>
-            </p>
-            <p>
-                <a aria-label="View Kunal on Discord" href="http://discordapp.com/users/517591038093688844" target="_blank"
-                data-position="top" data-tooltip="Discord"
-                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                    class="fa-brands fa-discord"></i><a aria-label="kunal on Discord" href="http://discordapp.com/users/517591038093688844"></a></a>
-            </p>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/CookBook_Android_App" target="_blank">CookBook Android Application</a>
+              </div>
             </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/System-Monitor-Django" target="_blank">System Monitor Django</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/vue-frontend" target="_blank">Study Resources Web Application</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/thefirstavenger" target="_blank">Library Management System</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/PyGame-Space-Invaders" target="_blank">Space Invaders PyGame</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/AI-Chatbot" target="_blank">ChatBot Django, NLP</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/DataDiggers" target="_blank">FAANG Stock Market Prediction</a>
+              </div>
+            </div>
+          </header>
+          <header>
+            <div class="header-left">
+              <div class="title">
+                <a href="https://github.com/KunalDhanaitkar/Web-Crawler-BeautifulSoup" target="_blank">Crawler and Search Engine Python</a>
+              </div>
+            </div>
+          </header>
+          
         </section>
-        
-    </main>
+      </section>
+    </section>
 
-    <!-- typed.js -->
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script type="text/javascript">
-        var typed = new Typed('.typing',{
-        strings: ["an Engineer.", "a Developer."],
-        loop: true,
-        typeSpeed: 105,
-        backSpeed: 70
-        });
-    </script>
-
-    <!-- jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-    <!-- Materialize - Compiled and minified JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-    <script>
-        // Materialize - Initializers
-        $(document).ready(function () {
-        $(".scrollspy").scrollSpy()
-        // Initialize collapse button
-        $(".button-collapse").sideNav({
-            menuWidth: 190, // Default is 240
-            edge: "left", // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        })
-        })
-    </script>
-</body>
-
+  </body>
 </html>
